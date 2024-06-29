@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Planpoint</title>
+        <!--
+            =Fonts
+        -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <!--
+            =Header
+        -->
+        <header class="header .text-neutral-900 fs-nav">
+            <div class="container header__container">
+                <a href="#" class="logo"
+                    ><img
+                        src="images/logo.svg"
+                        alt="logo-planpoint"
+                        role="link"
+                        aria-label="Planpoint logo"
+                /></a>
+                <button class="mobile-nav-toggle" aria-controls="header-nav" aria-expanded="false">
+                    <img
+                        class="icon-hamburger"
+                        src="images/hamburger.svg"
+                        alt=""
+                        aria-hidden="true"
+                    />
+                    <img class="icon-close" src="images/close.svg" alt="" aria-hidden="true" />
+                    <span class="visually-hidden">Menu</span>
+                </button>
+                <nav class="header__nav" id="header-nav">
+                    <ul class="header__ul-primary menu" aria-label="header-navigation" role="list">
+                        <li><a href="#">Tour</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li>
+                            <a href="#">Examples</a>
+                            <div class="sub-menu">
+                                <div class="category">
+                                    <h3>Themes</h3>
+                                    <ul class="sub-category" role="list">
+                                        <li>
+                                            <div class="bullet">1</div>
+                                            <p>
+                                                <a href="#">Modern 1</a>
+                                                Blends well anywhere
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <div class="bullet">2</div>
+                                            <p>
+                                                <a href="#">Modern 2</a>
+                                                Another great fit
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <div class="bullet">3</div>
+                                            <p>
+                                                <a href="#">Elegant</a>
+                                                Luxury feel
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <div class="bullet">4</div>
+                                            <p>
+                                                <a href="#">Brutalist</a>
+                                                Minimalist UI
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <div class="bullet">5</div>
+                                            <p>
+                                                <a href="#">Dark-mode</a>
+                                                Turn the colors around
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <div class="bullet">6</div>
+                                            <p>
+                                                <a href="#">Full-width</a>
+                                                UI that fits the full screen
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="category">
+                                    <h3>Live websites</h3>
+                                    <ul class="sub-category" role="list">
+                                        <li>
+                                            <div class="bullet">
+                                                <i class="fa-solid fa-globe"></i>
+                                            </div>
+                                            <p>
+                                                <a href="#">Example 1</a>
+                                                Condominiums for sale
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <div class="bullet">
+                                                <i class="fa-solid fa-globe"></i>
+                                            </div>
+                                            <p>
+                                                <a href="#">Example 2</a>
+                                                New rentals
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <div class="bullet">
+                                                <i class="fa-solid fa-globe"></i>
+                                            </div>
+                                            <p>
+                                                <a href="#">Example 3</a>
+                                                New rentals
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <div class="bullet">
+                                                <i class="fa-solid fa-globe"></i>
+                                            </div>
+                                            <p>
+                                                <a href="#">Example 4</a>
+                                                New rentals
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <div class="bullet">
+                                                <i class="fa-solid fa-globe"></i>
+                                            </div>
+                                            <p>
+                                                <a href="#">Example 5</a>
+                                                New rentals
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <div class="bullet">
+                                                <i class="fa-solid fa-globe"></i>
+                                            </div>
+                                            <p>
+                                                <a href="#">Example 6</a>
+                                                Apartments
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="category">
+                                    <h3>Categories</h3>
+                                    <ul class="sub-category" role="list">
+                                        <li>
+                                            <div class="bullet">
+                                                <i class="fa-solid fa-city"></i>
+                                            </div>
+                                            <p>
+                                                <a href="#">New Construction</a>
+                                                Presales and sales
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <div class="bullet">
+                                                <i class="fa-regular fa-building"></i>
+                                            </div>
+                                            <p>
+                                                <a href="#">Rental</a>
+                                                Lease-up and thereafter
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <div class="bullet">
+                                                <i class="fa-solid fa-house"></i>
+                                            </div>
+                                            <p>
+                                                <a href="#">Multi-family</a>
+                                                From small to large
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <div class="bullet">
+                                                <i class="fa-solid fa-people-roof"></i>
+                                            </div>
+                                            <p>
+                                                <a href="#">Single-family</a>
+                                                Home developments
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <div class="bullet">
+                                                <i class="fa-solid fa-hotel"></i>
+                                            </div>
+                                            <p>
+                                                <a href="#">Commercial</a>
+                                                For retail, office, industrial
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <div class="bullet">
+                                                <i class="fa-solid fa-map-location"></i>
+                                            </div>
+                                            <p>
+                                                <a href="#">Land</a>
+                                                Raw land divided into plots
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="category">
+                                    <h3>Modes</h3>
+                                    <ul class="sub-category" role="list">
+                                        <li>
+                                            <div class="bullet">
+                                                <i class="fa-solid fa-display"></i>
+                                            </div>
+                                            <p>
+                                                <a href="#">Base</a>
+                                                All about the money-shot
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <div class="bullet">
+                                                <i class="fa-solid fa-display"></i>
+                                            </div>
+                                            <p>
+                                                <a href="#">360&deg; project</a>
+                                                Multiple angles and views
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <div class="bullet">
+                                                <i class="fa-solid fa-display"></i>
+                                            </div>
+                                            <p>
+                                                <a href="#">Immersive 3D </a>
+                                                The full 3D experience
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <div class="bullet">
+                                                <i class="fa-solid fa-display"></i>
+                                            </div>
+                                            <p>
+                                                <a href="#">Enterprise</a>
+                                                Multi-project map interface
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <div class="bullet">
+                                                <i class="fa-solid fa-display"></i>
+                                            </div>
+                                            <p>
+                                                <a href="#">Superframe</a>
+                                                Immersive gallery UX
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <div class="bullet">
+                                                <i class="fa-solid fa-display"></i>
+                                            </div>
+                                            <p>
+                                                <a href="#">Spotlight</a>
+                                                Pinpoints instead of floors
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#">Pricing</a></li>
+                    </ul>
+                    <ul
+                        class="header__ul-secondary menu"
+                        aria-label="header-navigation"
+                        role="list"
+                    >
+                        <li>
+                            <a href="#">Choose Language</a>
+                            <ul class="sub-menu" role="list">
+                                <li><a href="#">Français</a></li>
+                                <li><a href="#">English</a></li>
+                                <li><a href="#">Español</a></li>
+                                <li><a href="#">Deutsch</a></li>
+                                <li><a href="#">中国人</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Book a demo</a></li>
+                        <li><button class="btn" data-type="black">Free trial</button></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!--
+            =Hero
+        -->
+        <section class="hero">
+            <div class="container hero__container text-neutral-900">
+                <button class="btn text-neutral-100" data-type="gold">
+                    <div class="btn-circle">New!</div>
+                    Commercial on Planpoint &rarr;
+                </button>
+                <h1 class="fs-heading-primary fw-bold">Accelerate your sales and rentals</h1>
+                <p>
+                    with the leading interactive plan viewer&semi; used by major industry players
+                    like Devmont, Mach and Samcon.
+                </p>
+                <video width="280px" height="156px" controls>
+                    <source src="images/planpoint.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
+                <a href="#" class="text-secondary fs-body fw-semi-bold">View examples</a>
+                <a href="#" class="text-secondary fs-body fw-semi-bold">Book a demo</a>
+                <h2 class="fs-secondary-800 fw-bold">
+                    Trusted by successful developers, property owners &amp; marketing teams alike
+                </h2>
+                <div class="company-logos">
+                    <img src="images/berton.png" alt="logo" /><img
+                        src="images/escapes.svg"
+                        alt=""
+                    /><img src="images/devcore.svg" alt="logo" /><img
+                        src="images/devmont.png"
+                        alt="logo"
+                    /><img src="images/mach.png" alt="logo" /><img
+                        src="images/mason.png"
+                        alt="logo"
+                    /><img src="images/mc.png" alt="logo" /><img
+                        src="images/melatti.svg"
+                        alt="logo"
+                    /><img src="images/mitchell.png" alt="logo" /><img
+                        src="images/montclair.png"
+                        alt="logo"
+                    /><img src="images/pur.svg" alt="logo" /><img
+                        src="images/qmd.png"
+                        alt="logo"
+                    /><img src="images/rachel.png" alt="logo" /><img
+                        src="images/ray.png"
+                        alt="logo"
+                    /><img src="images/robin.svg" alt="logo" /><img
+                        src="images/samcon.png"
+                        alt="logo"
+                    /><img src="images/vistacorp.svg" alt="logo" /><img
+                        src="images/mach.png"
+                        alt="logo"
+                    /><img src="images/devmont.png" alt="logo" /><img
+                        src="images/pur.svg"
+                        alt="logo"
+                    /><img src="images/montclair.png" alt="logo" /><img
+                        src="images/berton.png"
+                        alt="logo"
+                    /><img src="images/mc.png" alt="logo" /><img
+                        src="images/rachel.png"
+                        alt="logo"
+                    />
+                </div>
+            </div>
+        </section>
+        <section class="benefits text-neutral-900">
+            <div class="container benefits__container">
+                <article>
+                    <div class="text">
+                        <h2 class="fs-heading-secondary fw-bold">Easy to create &amp; manage</h2>
+                        <p class="fs-paragraph-primary fw-medium">Made for any skill level</p>
+                        <p class="fs-paragraph-secondary">
+                            Non-tech savvy users can easily update availabilities, pricing, unit
+                            layouts, images, floorplans and more.
+                        </p>
+                        <p class="fs-paragraph-primary fw-medium">Grant permissions &amp; roles</p>
+                        <p class="fs-paragraph-secondary">
+                            Grant different permissions dependent on role: general updates for admin
+                            teams, styling tools for marketing teams.
+                        </p>
+                    </div>
+                    <img src="" alt="" />
+                </article>
+                <article>
+                    <div class="text">
+                        <h2 class="fs-heading-secondary fw-bold">
+                            Powerful &amp; evergrowing features
+                        </h2>
+                        <p class="fs-paragraph-primary fw-medium">
+                            Enterprise map, 360&deg; project, 3D tours, Windows app, allocations for
+                            agents, analytics, SEO and more...
+                        </p>
+                        <p class="fs-paragraph-secondary">
+                            Our ever-evolving platform ensures you stay ahead of your competitors
+                            marketing-wise.
+                        </p>
+                    </div>
+                    <img src="" alt="" />
+                </article>
+                <article>
+                    <div class="text">
+                        <h2 class="fs-heading-secondary fw-bold">Pay monthly, no contract</h2>
+                        <p class="fs-paragraph-primary fw-medium">Eliminate large up-front costs</p>
+                        <p class="fs-paragraph-secondary">
+                            Custom viewers or selectors are extremely capital intensive. Planpoint
+                            skips the up-front costs.
+                        </p>
+                        <p class="fs-paragraph-primary fw-medium">Start and stop when you want</p>
+                        <p class="fs-paragraph-secondary">
+                            There's no contrat to sign and no penalty to stop using the platform.
+                        </p>
+                    </div>
+                    <img src="" alt="" />
+                </article>
+                <article>
+                    <div class="text">
+                        <h2 class="fs-heading-secondary fw-bold">
+                            Customize it for your own needs
+                        </h2>
+                        <p class="fs-paragraph-primary fw-medium">9 Templates, 3 Modes</p>
+                        <p class="fs-paragraph-secondary">
+                            Choose from our beautiful collection of 9 pre-made template themes.
+                        </p>
+                        <p class="fs-paragraph-primary fw-medium">Your Own Branding</p>
+                        <p class="fs-paragraph-secondary">
+                            Customize the look and feel of your Planpoint viewer to suit your
+                            project's branding.
+                        </p>
+                    </div>
+                    <img src="" alt="" />
+                </article>
+                <article>
+                    <div class="text">
+                        <h2 class="fs-heading-secondary fw-bold">Rapid &amp; dedicated support</h2>
+                        <p class="fs-paragraph-primary fw-medium">
+                            We'll walk you through each step
+                        </p>
+                        <p class="fs-paragraph-secondary">
+                            We’ve streamlined the setup to ensure it is easy to follow, but our team
+                            is available via virtual calls for any questions during setup
+                        </p>
+                        <p class="fs-paragraph-primary fw-medium">Increased value</p>
+                        <p class="fs-paragraph-secondary">
+                            We're happy to use our industry experience to advise on the best
+                            strategies and content for your Planpoint.
+                        </p>
+                    </div>
+                    <img src="" alt="" />
+                </article>
+            </div>
+        </section>
+
+        <section class="cta">
+            <div class="container cta__container"></div>
+        </section>
+    </body>
+</html>

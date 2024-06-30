@@ -94,6 +94,7 @@ video {
     --FS-BTN: var(--FS-200);
     --FS-PARAGRAPH-PRIMARY: var(--FS-300);
     --FS-PARAGRAPH-SECONDARY: var(--FS-100);
+    --FS-BIG-TEXT: 3.125rem;
 
     /*
         =Colors
@@ -131,6 +132,7 @@ video {
         --FS-700: clamp(1.6875rem, 3.375vw, 3.5rem);
         --FS-800: clamp(1.875rem, 5vw, 5rem);
         --FS-900: clamp(2.625rem, 7vw, 7rem);
+        -fs-big-text: clamp(3.125rem, 10vw, 11rem);
     }
 }
 
@@ -205,11 +207,14 @@ video {
 .fs-btn {
     font-size: var(--FS-BTN);
 }
-.fs--paragraph-primary {
+.fs-paragraph-primary {
     font-size: var(--FS-PARAGRAPH-PRIMARY);
 }
-.fs--paragraph-secondary {
+.fs-paragraph-secondary {
     font-size: var(--FS-PARAGRAPH-SECONDARY);
+}
+.fs-big-text {
+    font-size: var(--FS-BIG-TEXT);
 }
 
 .padding-block-900 {

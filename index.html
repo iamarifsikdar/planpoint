@@ -5,7 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Planpoint</title>
         <!--
-            =Fonts
+            =VideoJS
+        -->
+        <link href="https://unpkg.com/video.js@7/dist/video-js.min.css" rel="stylesheet" />
+
+        <!--
+            =Fontawesome
         -->
         <link
             rel="stylesheet"
@@ -14,12 +19,18 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         />
+        <!--
+            =Fonts
+        -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
             href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
             rel="stylesheet"
         />
+        <!--
+            =CSS
+        -->
         <link rel="stylesheet" href="css/style.css" />
     </head>
     <body>
@@ -30,6 +41,7 @@
             <div class="container header__container">
                 <a href="#" class="logo"
                     ><img
+                        width="163px"
                         src="images/logo.svg"
                         alt="logo-planpoint"
                         role="link"
@@ -37,12 +49,19 @@
                 /></a>
                 <button class="mobile-nav-toggle" aria-controls="header-nav" aria-expanded="false">
                     <img
+                        width="20px"
                         class="icon-hamburger"
                         src="images/hamburger.svg"
                         alt=""
                         aria-hidden="true"
                     />
-                    <img class="icon-close" src="images/close.svg" alt="" aria-hidden="true" />
+                    <img
+                        width="20px"
+                        class="icon-close"
+                        src="images/close.svg"
+                        alt=""
+                        aria-hidden="true"
+                    />
                     <span class="visually-hidden">Menu</span>
                 </button>
                 <nav class="header__nav" id="header-nav">
@@ -50,231 +69,235 @@
                         <li><a href="#">Tour</a></li>
                         <li><a href="#">Features</a></li>
                         <li>
-                            <a href="#">Examples</a>
-                            <div class="sub-menu">
-                                <div class="category">
-                                    <h3>Themes</h3>
-                                    <ul class="sub-category" role="list">
-                                        <li>
-                                            <div class="bullet">1</div>
-                                            <p>
-                                                <a href="#">Modern 1</a>
-                                                Blends well anywhere
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <div class="bullet">2</div>
-                                            <p>
-                                                <a href="#">Modern 2</a>
-                                                Another great fit
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <div class="bullet">3</div>
-                                            <p>
-                                                <a href="#">Elegant</a>
-                                                Luxury feel
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <div class="bullet">4</div>
-                                            <p>
-                                                <a href="#">Brutalist</a>
-                                                Minimalist UI
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <div class="bullet">5</div>
-                                            <p>
-                                                <a href="#">Dark-mode</a>
-                                                Turn the colors around
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <div class="bullet">6</div>
-                                            <p>
-                                                <a href="#">Full-width</a>
-                                                UI that fits the full screen
-                                            </p>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="category">
-                                    <h3>Live websites</h3>
-                                    <ul class="sub-category" role="list">
-                                        <li>
-                                            <div class="bullet">
-                                                <i class="fa-solid fa-globe"></i>
-                                            </div>
-                                            <p>
-                                                <a href="#">Example 1</a>
-                                                Condominiums for sale
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <div class="bullet">
-                                                <i class="fa-solid fa-globe"></i>
-                                            </div>
-                                            <p>
-                                                <a href="#">Example 2</a>
-                                                New rentals
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <div class="bullet">
-                                                <i class="fa-solid fa-globe"></i>
-                                            </div>
-                                            <p>
-                                                <a href="#">Example 3</a>
-                                                New rentals
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <div class="bullet">
-                                                <i class="fa-solid fa-globe"></i>
-                                            </div>
-                                            <p>
-                                                <a href="#">Example 4</a>
-                                                New rentals
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <div class="bullet">
-                                                <i class="fa-solid fa-globe"></i>
-                                            </div>
-                                            <p>
-                                                <a href="#">Example 5</a>
-                                                New rentals
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <div class="bullet">
-                                                <i class="fa-solid fa-globe"></i>
-                                            </div>
-                                            <p>
-                                                <a href="#">Example 6</a>
-                                                Apartments
-                                            </p>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="category">
-                                    <h3>Categories</h3>
-                                    <ul class="sub-category" role="list">
-                                        <li>
-                                            <div class="bullet">
-                                                <i class="fa-solid fa-city"></i>
-                                            </div>
-                                            <p>
-                                                <a href="#">New Construction</a>
-                                                Presales and sales
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <div class="bullet">
-                                                <i class="fa-regular fa-building"></i>
-                                            </div>
-                                            <p>
-                                                <a href="#">Rental</a>
-                                                Lease-up and thereafter
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <div class="bullet">
-                                                <i class="fa-solid fa-house"></i>
-                                            </div>
-                                            <p>
-                                                <a href="#">Multi-family</a>
-                                                From small to large
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <div class="bullet">
-                                                <i class="fa-solid fa-people-roof"></i>
-                                            </div>
-                                            <p>
-                                                <a href="#">Single-family</a>
-                                                Home developments
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <div class="bullet">
-                                                <i class="fa-solid fa-hotel"></i>
-                                            </div>
-                                            <p>
-                                                <a href="#">Commercial</a>
-                                                For retail, office, industrial
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <div class="bullet">
-                                                <i class="fa-solid fa-map-location"></i>
-                                            </div>
-                                            <p>
-                                                <a href="#">Land</a>
-                                                Raw land divided into plots
-                                            </p>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="category">
-                                    <h3>Modes</h3>
-                                    <ul class="sub-category" role="list">
-                                        <li>
-                                            <div class="bullet">
-                                                <i class="fa-solid fa-display"></i>
-                                            </div>
-                                            <p>
-                                                <a href="#">Base</a>
-                                                All about the money-shot
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <div class="bullet">
-                                                <i class="fa-solid fa-display"></i>
-                                            </div>
-                                            <p>
-                                                <a href="#">360&deg; project</a>
-                                                Multiple angles and views
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <div class="bullet">
-                                                <i class="fa-solid fa-display"></i>
-                                            </div>
-                                            <p>
-                                                <a href="#">Immersive 3D </a>
-                                                The full 3D experience
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <div class="bullet">
-                                                <i class="fa-solid fa-display"></i>
-                                            </div>
-                                            <p>
-                                                <a href="#">Enterprise</a>
-                                                Multi-project map interface
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <div class="bullet">
-                                                <i class="fa-solid fa-display"></i>
-                                            </div>
-                                            <p>
-                                                <a href="#">Superframe</a>
-                                                Immersive gallery UX
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <div class="bullet">
-                                                <i class="fa-solid fa-display"></i>
-                                            </div>
-                                            <p>
-                                                <a href="#">Spotlight</a>
-                                                Pinpoints instead of floors
-                                            </p>
-                                        </li>
-                                    </ul>
+                            <button id="examples" aria-expanded="false">
+                                Examples <span class="example-dropdown">&#x25BC;</span>
+                            </button>
+                            <div class="sub-menu-container">
+                                <div class="sub-menu" id="examples-list">
+                                    <div class="category">
+                                        <h3>Themes</h3>
+                                        <ul class="sub-category" role="list">
+                                            <li>
+                                                <div class="bullet">1</div>
+                                                <p>
+                                                    <a href="#">Modern 1</a>
+                                                    Blends well anywhere
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <div class="bullet">2</div>
+                                                <p>
+                                                    <a href="#">Modern 2</a>
+                                                    Another great fit
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <div class="bullet">3</div>
+                                                <p>
+                                                    <a href="#">Elegant</a>
+                                                    Luxury feel
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <div class="bullet">4</div>
+                                                <p>
+                                                    <a href="#">Brutalist</a>
+                                                    Minimalist UI
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <div class="bullet">5</div>
+                                                <p>
+                                                    <a href="#">Dark-mode</a>
+                                                    Turn the colors around
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <div class="bullet">6</div>
+                                                <p>
+                                                    <a href="#">Full-width</a>
+                                                    UI that fits the full screen
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="category">
+                                        <h3>Live websites</h3>
+                                        <ul class="sub-category" role="list">
+                                            <li>
+                                                <div class="bullet">
+                                                    <i class="fa-solid fa-globe"></i>
+                                                </div>
+                                                <p>
+                                                    <a href="#">Example 1</a>
+                                                    Condominiums for sale
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <div class="bullet">
+                                                    <i class="fa-solid fa-globe"></i>
+                                                </div>
+                                                <p>
+                                                    <a href="#">Example 2</a>
+                                                    New rentals
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <div class="bullet">
+                                                    <i class="fa-solid fa-globe"></i>
+                                                </div>
+                                                <p>
+                                                    <a href="#">Example 3</a>
+                                                    New rentals
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <div class="bullet">
+                                                    <i class="fa-solid fa-globe"></i>
+                                                </div>
+                                                <p>
+                                                    <a href="#">Example 4</a>
+                                                    New rentals
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <div class="bullet">
+                                                    <i class="fa-solid fa-globe"></i>
+                                                </div>
+                                                <p>
+                                                    <a href="#">Example 5</a>
+                                                    New rentals
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <div class="bullet">
+                                                    <i class="fa-solid fa-globe"></i>
+                                                </div>
+                                                <p>
+                                                    <a href="#">Example 6</a>
+                                                    Apartments
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="category">
+                                        <h3>Categories</h3>
+                                        <ul class="sub-category" role="list">
+                                            <li>
+                                                <div class="bullet">
+                                                    <i class="fa-solid fa-city"></i>
+                                                </div>
+                                                <p>
+                                                    <a href="#">New Construction</a>
+                                                    Presales and sales
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <div class="bullet">
+                                                    <i class="fa-regular fa-building"></i>
+                                                </div>
+                                                <p>
+                                                    <a href="#">Rental</a>
+                                                    Lease-up and thereafter
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <div class="bullet">
+                                                    <i class="fa-solid fa-house"></i>
+                                                </div>
+                                                <p>
+                                                    <a href="#">Multi-family</a>
+                                                    From small to large
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <div class="bullet">
+                                                    <i class="fa-solid fa-people-roof"></i>
+                                                </div>
+                                                <p>
+                                                    <a href="#">Single-family</a>
+                                                    Home developments
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <div class="bullet">
+                                                    <i class="fa-solid fa-hotel"></i>
+                                                </div>
+                                                <p>
+                                                    <a href="#">Commercial</a>
+                                                    For retail, office, industrial
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <div class="bullet">
+                                                    <i class="fa-solid fa-map-location"></i>
+                                                </div>
+                                                <p>
+                                                    <a href="#">Land</a>
+                                                    Raw land divided into plots
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="category">
+                                        <h3>Modes</h3>
+                                        <ul class="sub-category" role="list">
+                                            <li>
+                                                <div class="bullet">
+                                                    <i class="fa-solid fa-display"></i>
+                                                </div>
+                                                <p>
+                                                    <a href="#">Base</a>
+                                                    All about the money-shot
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <div class="bullet">
+                                                    <i class="fa-solid fa-display"></i>
+                                                </div>
+                                                <p>
+                                                    <a href="#">360&deg; project</a>
+                                                    Multiple angles and views
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <div class="bullet">
+                                                    <i class="fa-solid fa-display"></i>
+                                                </div>
+                                                <p>
+                                                    <a href="#">Immersive 3D </a>
+                                                    The full 3D experience
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <div class="bullet">
+                                                    <i class="fa-solid fa-display"></i>
+                                                </div>
+                                                <p>
+                                                    <a href="#">Enterprise</a>
+                                                    Multi-project map interface
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <div class="bullet">
+                                                    <i class="fa-solid fa-display"></i>
+                                                </div>
+                                                <p>
+                                                    <a href="#">Superframe</a>
+                                                    Immersive gallery UX
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <div class="bullet">
+                                                    <i class="fa-solid fa-display"></i>
+                                                </div>
+                                                <p>
+                                                    <a href="#">Spotlight</a>
+                                                    Pinpoints instead of floors
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </li>
@@ -286,8 +309,15 @@
                         role="list"
                     >
                         <li>
-                            <a href="#">Choose Language</a>
-                            <ul class="sub-menu" role="list">
+                            <button id="language" aria-expanded="false">
+                                <span class="language-text"
+                                    >Choose Language
+                                    <span class="language-dropdown">&#x25BC;</span></span
+                                ><span class="language-flag"
+                                    ><img src="images/us-lang.png" alt="flag"
+                                /></span>
+                            </button>
+                            <ul class="sub-menu" role="list" id="language-list">
                                 <li><a href="#">Français</a></li>
                                 <li><a href="#">English</a></li>
                                 <li><a href="#">Español</a></li>
@@ -295,10 +325,14 @@
                                 <li><a href="#">中国人</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">Support</a></li>
-                        <li><a href="#">Login</a></li>
-                        <li><a href="#">Book a demo</a></li>
-                        <li><button class="btn" data-type="black">Free trial</button></li>
+                        <li class="invisible-li"><a href="#">Support</a></li>
+                        <li class="invisible-li"><a href="#">Login</a></li>
+                        <li class="invisible-li"><a href="#">Book a demo</a></li>
+                        <li>
+                            <button class="btn fw-medium" data-type="black">
+                                Free trial <span>&rarr;</span>
+                            </button>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -307,8 +341,8 @@
         <!--
             =Hero
         -->
-        <section class="hero">
-            <div class="container hero__container text-neutral-900">
+        <section class="hero margin-block-900">
+            <div class="container hero__container text-neutral-900 flow">
                 <button class="btn fs-btn fw-medium" data-type="gold">
                     <div class="btn-circle fw-semi-bold">New!</div>
                     Commercial on Planpoint &rarr;
@@ -318,53 +352,62 @@
                     with the leading interactive plan viewer&semi; used by major industry players
                     like Devmont, Mach and Samcon.
                 </p>
-                <video width="280px" height="156px" controls>
-                    <source src="images/planpoint.mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
-                </video>
-                <a href="#" class="text-secondary fs-body fw-semi-bold">View examples</a>
-                <a href="#" class="text-secondary fs-body fw-semi-bold">Book a demo</a>
-                <h2 class="fs-secondary-800 fw-bold">
+                <div class="video">
+                    <video
+                        controls
+                        data-setup="{}"
+                        class="vjs-matrix video-js vjs-fill"
+                        autoplay
+                        muted
+                    >
+                        <source src="images/planpoint.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="hero-btns">
+                    <a href="#" class="text-secondary fs-body fw-semi-bold">View examples</a>
+                    <a href="#" class="text-secondary fs-body fw-semi-bold">Book a demo</a>
+                </div>
+                <h2 class="fs-heading-secondary-800 fw-bold">
                     Trusted by successful developers, property owners &amp; marketing teams alike
                 </h2>
                 <div class="company-logos">
-                    <img src="images/berton.png" alt="logo" /><img
-                        src="images/escapes.svg"
-                        alt=""
-                    /><img src="images/devcore.svg" alt="logo" /><img
-                        src="images/devmont.png"
-                        alt="logo"
-                    /><img src="images/mach.png" alt="logo" /><img
-                        src="images/mason.png"
-                        alt="logo"
-                    /><img src="images/mc.png" alt="logo" /><img
-                        src="images/melatti.svg"
-                        alt="logo"
-                    /><img src="images/mitchell.png" alt="logo" /><img
-                        src="images/montclair.png"
-                        alt="logo"
-                    /><img src="images/pur.svg" alt="logo" /><img
-                        src="images/qmd.png"
-                        alt="logo"
-                    /><img src="images/rachel.png" alt="logo" /><img
-                        src="images/ray.png"
-                        alt="logo"
-                    /><img src="images/robin.svg" alt="logo" /><img
-                        src="images/samcon.png"
-                        alt="logo"
-                    /><img src="images/vistacorp.svg" alt="logo" /><img
-                        src="images/mach.png"
-                        alt="logo"
-                    /><img src="images/devmont.png" alt="logo" /><img
-                        src="images/pur.svg"
-                        alt="logo"
-                    /><img src="images/montclair.png" alt="logo" /><img
-                        src="images/berton.png"
-                        alt="logo"
-                    /><img src="images/mc.png" alt="logo" /><img
-                        src="images/rachel.png"
-                        alt="logo"
-                    />
+                    <div class="slider">
+                        <div class="slide-track">
+                            <div class="slide"><img src="images/berton.png" alt="logo" /></div>
+                            <div class="slide"><img src="images/escapes.svg" alt="logo" /></div>
+                            <div class="slide"><img src="images/devcore.svg" alt="logo" /></div>
+                            <div class="slide"><img src="images/devmont.png" alt="logo" /></div>
+                            <div class="slide"><img src="images/mach.png" alt="logo" /></div>
+                            <div class="slide"><img src="images/mason.png" alt="logo" /></div>
+                            <div class="slide"><img src="images/mc.png" alt="logo" /></div>
+                            <div class="slide"><img src="images/melatti.svg" alt="logo" /></div>
+                        </div>
+                    </div>
+                    <div class="slider-reverse">
+                        <div class="slide-track">
+                            <div class="slide"><img src="images/mitchell.png" alt="logo" /></div>
+                            <div class="slide"><img src="images/montclair.png" alt="logo" /></div>
+                            <div class="slide"><img src="images/pur.svg" alt="logo" /></div>
+                            <div class="slide"><img src="images/qmd.png" alt="logo" /></div>
+                            <div class="slide"><img src="images/rachel.png" alt="logo" /></div>
+                            <div class="slide"><img src="images/ray.png" alt="logo" /></div>
+                            <div class="slide"><img src="images/robin.svg" alt="logo" /></div>
+                            <div class="slide"><img src="images/samcon.png" alt="logo" /></div>
+                        </div>
+                    </div>
+                    <div class="slider">
+                        <div class="slide-track">
+                            <div class="slide"><img src="images/vistacorp.svg" alt="logo" /></div>
+                            <div class="slide"><img src="images/mach.png" alt="logo" /></div>
+                            <div class="slide"><img src="images/devmont.png" alt="logo" /></div>
+                            <div class="slide"><img src="images/pur.svg" alt="logo" /></div>
+                            <div class="slide"><img src="images/montclair.png" alt="logo" /></div>
+                            <div class="slide"><img src="images/berton.png" alt="logo" /></div>
+                            <div class="slide"><img src="images/mc.png" alt="logo" /></div>
+                            <div class="slide"><img src="images/rachel.png" alt="logo" /></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -372,8 +415,8 @@
         <!--
             =Benefits
         -->
-        <section class="benefits text-neutral-900">
-            <div class="container benefits__container">
+        <section class="benefits text-neutral-900 margin-block-900">
+            <div class="container benefits__container flow" style="--flow-spacer: 0.7em">
                 <article class="even-columns bg-neutral-400">
                     <div class="text">
                         <h2 class="fs-heading-secondary fw-bold">Easy to create &amp; manage</h2>
@@ -462,11 +505,11 @@
         <!--
             =CTA
         -->
-        <section class="cta text-neutral-900">
-            <div class="container cta__container">
+        <section class="cta text-neutral-900 margin-block-900">
+            <div class="container cta__container flow" style="--flow-spacer: 0.7em">
                 <article>
                     <div class="text">
-                        <h2 class="fs-header-secondary fw-bold">
+                        <h2 class="fs-heading-secondary fw-bold">
                             Integrates into your own website
                         </h2>
                         <p class="fs-paragraph-primary">
@@ -475,18 +518,20 @@
                             website platform including WordPress, Wix, Webflow, and more.
                         </p>
                         <ul class="cta__ul">
-                            <li>Works with any website technology</li>
-                            <li>Match your project's branding</li>
+                            <li>
+                                <i class="fa-solid fa-check"></i> Works with any website technology
+                            </li>
+                            <li><i class="fa-solid fa-check"></i> Match your project's branding</li>
                         </ul>
-                        <button class="btn fs-btn fw-semi-bold" datatype="blue">
+                        <button class="btn fs-btn fw-semi-bold" data-type="blue">
                             &rarr; View all features
                         </button>
                     </div>
-                    <img src="images/cta-1.png" alt="desktop" />
+                    <div class="image"><img src="images/cta-1.png" alt="desktop" /></div>
                 </article>
                 <article>
                     <div class="text">
-                        <h2 class="fs-header-secondary fw-bold">
+                        <h2 class="fs-heading-secondary fw-bold">
                             For sales, rentals, single-family, land and more
                         </h2>
                         <p class="fs-paragraph-primary">
@@ -496,19 +541,23 @@
                         </p>
                         <ul class="cta__ul">
                             <li>
+                                <i class="fa-solid fa-check"></i>
                                 Fully adapted to the specifics and particularities of each segment
                             </li>
-                            <li>Only one turn-key solution needed for your entire portfolio</li>
+                            <li>
+                                <i class="fa-solid fa-check"></i> Only one turn-key solution needed
+                                for your entire portfolio
+                            </li>
                         </ul>
-                        <button class="btn fs-btn fw-semi-bold" datatype="blue">
+                        <button class="btn fs-btn fw-semi-bold" data-type="blue">
                             &rarr; View live examples
                         </button>
                     </div>
-                    <img src="images/cta-2.png" alt="desktops" />
+                    <div class="image"><img src="images/cta-2.png" alt="desktops" /></div>
                 </article>
                 <article>
                     <div class="text">
-                        <h2 class="fs-header-secondary fw-bold">
+                        <h2 class="fs-heading-secondary fw-bold">
                             Doubles as a sales presentation tool
                         </h2>
                         <p class="fs-paragraph-primary">
@@ -516,39 +565,48 @@
                             monitors and smart TVs. Once sales people try it, they swear by it.
                         </p>
                         <ul class="cta__ul">
-                            <li>Much more efficient than printed plans</li>
-                            <li>Comes at no extra cost</li>
+                            <li>
+                                <i class="fa-solid fa-check"></i> Much more efficient than printed
+                                plans
+                            </li>
+                            <li><i class="fa-solid fa-check"></i> Comes at no extra cost</li>
                         </ul>
-                        <button class="btn fs-btn fw-semi-bold" datatype="blue">
+                        <button class="btn fs-btn fw-semi-bold" data-type="blue">
                             &rarr; View all features
                         </button>
                     </div>
-                    <img src="images/cta-3.png" alt="desktop" />
+                    <div class="image"><img src="images/cta-3.png" alt="desktop" /></div>
                 </article>
-                <div class="even-columns">
+                <div class="even-columns flow" style="--flow-spacer: 1.5em">
                     <div class="cta__box bg-primary-400 text-neutral-100">
-                        <h2 class="fs-heading-primary fw-bold">Book your 30-minute chat</h2>
+                        <h2 class="fs-heading-secondary fw-semi-bold">Book your 30-minute chat</h2>
                         <p class="fs-heading-secondary-600 fw-semi-bold">
                             One of our team members is just a Zoom call away.
                         </p>
-                        <button class="btn" data-type="white">Choose in calendar</button>
+                        <button class="btn" data-type="white">Choose in calendar &rarr;</button>
                     </div>
                     <div class="cta__box bg-secondary text-neutral-100">
-                        <h2 class="fs-heading-primary fw-bold">How Planpoint works</h2>
+                        <h2 class="fs-heading-secondary fw-semi-bold">How Planpoint works</h2>
                         <p class="fs-heading-secondary-600 fw-semi-bold">
                             You can build Planpoint on your own using our easy editor.
                         </p>
-                        <button class="btn" data-type="white">Learn how to build</button>
+                        <button class="btn" data-type="white">Learn how to build &rarr;</button>
                     </div>
                 </div>
                 <div class="support bg-neutral-400">
-                    <h2 class="fs-heading-primary fw-bold">Call us or discuss via email</h2>
-                    <p class="fs-heading-secondary-600 fw-semi-bold">Our team replies fast.</p>
-                    <div class="even-columns">
-                        <a href="tel:18883801995" class="btn" data-type="black">1-888-380-1995</a>
-                        <a href="mailto:support@planpoint.io" class="btn" data-type="black"
-                            >support@planpoint.io</a
-                        >
+                    <div class="support__width-box" style="--flow-spacer: 1.5em">
+                        <h2 class="fs-heading-secondary fw-bold">Call us or discuss via email</h2>
+                        <p class="fs-heading-secondary-600 fw-semi-bold">Our team replies fast.</p>
+                        <div class="support__flex">
+                            <a href="tel:18883801995" class="btn"
+                                ><span class="text">1-888-380-1995</span
+                                ><span class="circle">&rarr;</span></a
+                            >
+                            <a href="mailto:support@planpoint.io" class="btn"
+                                ><span class="text">support@planpoint.io</span
+                                ><span class="circle">&rarr;</span></a
+                            >
+                        </div>
                     </div>
                 </div>
             </div>
@@ -557,25 +615,25 @@
         <!--
             =Graph
         -->
-        <section class="graph bg-secondary text-neutral-100">
-            <div class="container graph__container">
-                <h2 class="fs-heading-secondary fw-bold">Supercharge your marketing</h2>
-                <p class="fw-medium">
+        <section class="graph bg-secondary text-neutral-100 margin-block-900">
+            <div class="container graph__container flow">
+                <h2 class="fs-heading-secondary fw-bold center">Supercharge your marketing</h2>
+                <p class="fw-medium center">
                     Become and remain on the leading edge of real estate marketing by leveraging
                     Planpoint's continuous R&D of new, useful features.
                 </p>
                 <div class="graph__box">
-                    <p class="fw-bold fs-paragraph-secondary">
-                        <span class="fs-heading-seconday-700">3</span>Top Features
+                    <p class="fs-paragraph-secondary fw-medium">
+                        <span class="fs-heading-secondary-700 fw-bold">3</span>Top Features
                     </p>
-                    <p class="fw-bold fs-paragraph-secondary">
-                        <span class="fs-heading-seconday-700">9</span>Top Features
+                    <p class="fs-paragraph-secondary fw-medium">
+                        <span class="fs-heading-secondary-700 fw-bold">9</span>Top Features
                     </p>
-                    <p class="fw-bold fs-paragraph-secondary">
-                        <span class="fs-heading-seconday-700">14</span>Top Features
+                    <p class="fs-paragraph-secondary fw-medium">
+                        <span class="fs-heading-secondary-700 fw-bold">14</span>Top Features
                     </p>
-                    <p class="fw-bold fs-paragraph-secondary">
-                        <span class="fs-heading-seconday-700">18</span>Top Features
+                    <p class="fs-paragraph-secondary fw-medium">
+                        <span class="fs-heading-secondary-700 fw-bold">18</span>Top Features
                     </p>
                 </div>
             </div>
@@ -584,8 +642,10 @@
         <!--
             =Ads
         -->
-        <section class="ads">
-            <p class="fw-bold fs-big-text">Desktops TVs Phones Tablets</p>
+        <section class="ads margin-block-900">
+            <div class="animation-p">
+                <p class="fw-bold fs-big-text">Desktops TVs Phones Tablets</p>
+            </div>
             <div class="container ads__container">
                 <img src="images/ads.jpg" alt="desktops and laptops" />
             </div>
@@ -594,11 +654,11 @@
         <!--
             =Testimonial
         -->
-        <section class="testimonial text-neutral-100">
-            <div class="bg-primary-300"></div>
+        <section class="testimonial text-neutral-100 margin-block-900">
+            <div class="bg-primary-300 blue-bg"></div>
             <div class="container testimonial__container">
                 <div class="testimonial__cta-box">
-                    <figure>
+                    <figure class="flow" style="--flow-spacer: 2em">
                         <blockquote>
                             &ldquo;Planpoint not only provides us with an easy-to-use platform to
                             present plans to potential buyers and tenants with a unique variety of
@@ -612,97 +672,128 @@
                         </figcaption>
                     </figure>
                     <img src="images/kodem.svg" alt="logo" />
-                    <button class="btn fs-btn fw-semi-bold" datatype="blue">
+                    <button class="btn fs-btn fw-semi-bold" data-type="blue">
                         &rarr; View all our features
                     </button>
                 </div>
-                <img src="images/man.jpg" alt="a man" />
+                <img class="man-image" src="images/man.jpg" alt="a man" />
             </div>
         </section>
 
         <!--
             =Footer
         -->
-        <footer class="footer text-neutral-100 bg-primary-400">
-            <div class="footer__cta even-columns">
-                <img src="images/logo.svg" alt="logo" />
-                <div class="flex">
-                    <p class="fs-heading-secondary-700 fw-bold">
-                        Want to try a test project first?
-                    </p>
-                    <button class="btn" data-type="white">
-                        Starts for free <span>&rarr;</span>
-                    </button>
+        <footer class="footer text-neutral-100 bg-primary-400 margin-block-900">
+            <div class="container footer__container">
+                <div class="footer__cta even-columns">
+                    <img src="images/logo.svg" alt="logo" width="163px" />
+                    <div class="flex">
+                        <p class="fs-heading-secondary-700 fw-bold">
+                            Want to try a test project first?
+                        </p>
+                        <button class="btn fs-btn" data-type="white">
+                            Starts for free <span>&rarr;</span>
+                        </button>
+                    </div>
                 </div>
-            </div>
-            <div class="flex">
-                <div class="virtual-meeting">
-                    <h3 class="fs-heading-secondary-700 fw-bold">Book a virtual meeting</h3>
-                    <button class="btn" data-type="white">
-                        Choose date and time in Calendar <span>&rarr;</span>
-                    </button>
-                    <ul class="virtual-meeting__ul">
-                        <li>Meet with experts</li>
-                        <li>Fully virtual</li>
+                <div class="nav-flex">
+                    <div class="virtual-meeting flow">
+                        <h3 class="fs-heading-secondary-700 fw-bold">Book a virtual meeting</h3>
+                        <button class="btn fs-btn" data-type="white">
+                            Choose date and time in Calendar <span>&rarr;</span>
+                        </button>
+                        <ul class="virtual-meeting__ul fs-paragraph-primary fw-medium">
+                            <li><i class="fa-solid fa-check"></i> Meet with experts</li>
+                            <li><i class="fa-solid fa-check"></i> Fully virtual</li>
+                        </ul>
+                    </div>
+                    <nav class="footer__nav-primary even-columns fs-nav fw-medium flow">
+                        <div class="column">
+                            <h4 class="fw-semi-bold">Product</h4>
+                            <ul
+                                class="footer__ul-primary"
+                                aria-label="footer-navigation"
+                                role="list"
+                            >
+                                <li><a href="#">Tour</a></li>
+                                <li><a href="#">Features</a></li>
+                                <li><a href="#">New releases</a></li>
+                                <li><a href="#">Become a partner</a></li>
+                                <li><a href="#">Themes</a></li>
+                                <li><a href="#">Pricing</a></li>
+                            </ul>
+                        </div>
+                        <div class="column">
+                            <h4 class="fw-semi-bold">Real Estate type</h4>
+                            <ul
+                                class="footer__ul-primary"
+                                aria-label="footer-navigation"
+                                role="list"
+                            >
+                                <li><a href="#">Condos</a></li>
+                                <li><a href="#">Rentals</a></li>
+                                <li><a href="#">Multi-family</a></li>
+                                <li><a href="#">Homes</a></li>
+                                <li><a href="#">Land</a></li>
+                                <li><a href="#">Commercial</a></li>
+                                <li><a href="#">Senior homes</a></li>
+                            </ul>
+                        </div>
+                        <div class="column">
+                            <h4 class="fw-semi-bold">Languages</h4>
+                            <ul
+                                class="footer__ul-primary"
+                                aria-label="footer-navigation"
+                                role="list"
+                            >
+                                <li><a href="#">Français</a></li>
+                                <li><a href="#">English</a></li>
+                                <li><a href="#">Español</a></li>
+                                <li><a href="#">Deutsch</a></li>
+                                <li><a href="#">中国人</a></li>
+                            </ul>
+                        </div>
+                        <div class="column">
+                            <h4 class="fw-semi-bold">Support</h4>
+                            <ul
+                                class="footer__ul-primary"
+                                aria-label="footer-navigation"
+                                role="list"
+                            >
+                                <li><a href="#">How it works</a></li>
+                                <li><a href="#">Content checklist</a></li>
+                                <li><a href="#">Docs for users &amp; devs</a></li>
+                                <li><a href="#">support (at) planpoint.io</a></li>
+                                <li><a href="tel:18883801995">1-888-380-1995</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <nav class="footer__nav-secondary even-columns">
+                    <ul
+                        class="footer__ul-secondary fs-nav"
+                        aria-label="footer-navigation"
+                        role="list"
+                    >
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of service</a></li>
                     </ul>
-                </div>
-                <nav class="footer_nav-primary even-columns">
-                    <div class="column">
-                        <h4 class="fs-nav fw-semi-bold">Product</h4>
-                        <ul class="footer__ul-primary" aria-label="footer-navigation" role="list">
-                            <li><a href="#">Tour</a></li>
-                            <li><a href="#">Features</a></li>
-                            <li><a href="#">New releases</a></li>
-                            <li><a href="#">Become a partner</a></li>
-                            <li><a href="#">Themes</a></li>
-                            <li><a href="#">Pricing</a></li>
-                        </ul>
-                    </div>
-                    <div class="column">
-                        <h4 class="fs-nav fw-semi-bold">Real Estate type</h4>
-                        <ul class="footer__ul-primary" aria-label="footer-navigation" role="list">
-                            <li><a href="#">Condos</a></li>
-                            <li><a href="#">Rentals</a></li>
-                            <li><a href="#">Multi-family</a></li>
-                            <li><a href="#">Homes</a></li>
-                            <li><a href="#">Land</a></li>
-                            <li><a href="#">Commercial</a></li>
-                            <li><a href="#">Senior homes</a></li>
-                        </ul>
-                    </div>
-                    <div class="column">
-                        <h4 class="fs-nav fw-semi-bold">Languages</h4>
-                        <ul class="footer__ul-primary" aria-label="footer-navigation" role="list">
-                            <li><a href="#">Français</a></li>
-                            <li><a href="#">English</a></li>
-                            <li><a href="#">Español</a></li>
-                            <li><a href="#">Deutsch</a></li>
-                            <li><a href="#">中国人</a></li>
-                        </ul>
-                    </div>
-                    <div class="column">
-                        <h4 class="fs-nav fw-semi-bold">Support</h4>
-                        <ul class="footer__ul-primary" aria-label="footer-navigation" role="list">
-                            <li><a href="#">How it works</a></li>
-                            <li><a href="#">Content checklist</a></li>
-                            <li><a href="#">Docs for users &amp; devs</a></li>
-                            <li><a href="#">support (at) planpoint.io</a></li>
-                            <li><a href="tel:18883801995">1-888-380-1995</a></li>
-                        </ul>
+                    <div class="social">
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a
+                        ><a href="#"><i class="fa-brands fa-square-instagram"></i></a
+                        ><a href="#"><i class="fa-brands fa-square-facebook"></i></a>
                     </div>
                 </nav>
-            </div>
-            <nav class="footer__nav-secondary even-columns">
-                <ul class="footer__ul-secondary" aria-label="footer-navigation" role="list">
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms of service</a></li>
-                </ul>
-                <div class="social">
-                    <a href="#"><i class="fa-brands fa-linkedin"></i></a
-                    ><a href="#"><i class="fa-brands fa-square-instagram"></i></a
-                    ><a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                <div class="copyright fs-paragraph-secondary fw-medium center">
+                    Arif &copy; 2024
                 </div>
-            </nav>
+            </div>
         </footer>
+
+        <!--
+            =Script
+        -->
+        <script src="js/main.js"></script>
+        <script src="https://vjs.zencdn.net/8.12.0/video.min.js"></script>
     </body>
 </html>

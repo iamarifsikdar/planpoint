@@ -38,45 +38,44 @@
             =Header
         -->
         <header class="header .text-neutral-900 fs-nav">
-            <div class="container header__container">
-                <a href="#" class="logo"
-                    ><img
-                        width="163px"
-                        src="images/logo.svg"
-                        alt="logo-planpoint"
-                        role="link"
-                        aria-label="Planpoint logo"
-                /></a>
-                <button class="mobile-nav-toggle" aria-controls="header-nav" aria-expanded="false">
-                    <img
-                        width="20px"
-                        class="icon-hamburger"
-                        src="images/hamburger.svg"
-                        alt=""
-                        aria-hidden="true"
-                    />
-                    <img
-                        width="20px"
-                        class="icon-close"
-                        src="images/close.svg"
-                        alt=""
-                        aria-hidden="true"
-                    />
-                    <span class="visually-hidden">Menu</span>
-                </button>
-                <nav class="header__nav" id="header-nav">
-                    <ul class="header__ul-primary menu" aria-label="header-navigation" role="list">
-                        <li><a href="#">Tour</a></li>
-                        <li><a href="#">Features</a></li>
-                        <li>
-                            <button id="examples" aria-expanded="false">
-                                Examples <span class="example-dropdown">&#x25BC;</span>
-                            </button>
-                            <div class="sub-menu-container">
-                                <div class="sub-menu" id="examples-list">
-                                    <div class="category">
-                                        <h3>Themes</h3>
-                                        <ul class="sub-category" role="list">
+            <div class="container nav-wrapper">
+                <div class="nav__data">
+                    <a href="#" class="nav__logo"
+                        ><img
+                            width="163px"
+                            src="images/logo.svg"
+                            alt="logo-planpoint"
+                            role="link"
+                            aria-label="Planpoint logo"
+                    /></a>
+                    <div
+                        class="nav__toggle"
+                        id="nav-toggle"
+                        aria-controls="header-nav"
+                        aria-expanded="false"
+                    >
+                        <i class="fa-solid fa-bars nav__toggle-menu" aria-hidden="true"></i>
+                        <i class="fa-solid fa-xmark nav__toggle-close" aria-hidden="true"></i>
+                        <span class="visually-hidden">Menu</span>
+                    </div>
+                </div>
+                <nav class="header__nav nav__menu" id="nav-menu">
+                    <ul
+                        class="nav__list nav__list-primary"
+                        aria-label="header-navigation"
+                        role="list"
+                    >
+                        <li><a href="#" class="nav__link">Tour</a></li>
+                        <li><a href="#" class="nav__link">Features</a></li>
+                        <li class="dropdown__item">
+                            <div class="nav__link dropdown__button" aria-expanded="false">
+                                Examples <i class="fa-solid fa-chevron-down dropdown__arrow"></i>
+                            </div>
+                            <div class="dropdown__container">
+                                <div class="dropdown__content">
+                                    <div class="dropdown__group">
+                                        <span class="dropdown__title">Themes</span>
+                                        <ul class="dropdown__list" role="list">
                                             <li>
                                                 <div class="bullet">1</div>
                                                 <p>
@@ -121,9 +120,9 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <div class="category">
-                                        <h3>Live websites</h3>
-                                        <ul class="sub-category" role="list">
+                                    <div class="dropdown__group">
+                                        <span class="dropdown__title">Live Websites</span>
+                                        <ul class="dropdown__list" role="list">
                                             <li>
                                                 <div class="bullet">
                                                     <i class="fa-solid fa-globe"></i>
@@ -180,9 +179,9 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <div class="category">
-                                        <h3>Categories</h3>
-                                        <ul class="sub-category" role="list">
+                                    <div class="dropdown__group">
+                                        <span class="dropdown__title">Categories</span>
+                                        <ul class="dropdown__list" role="list">
                                             <li>
                                                 <div class="bullet">
                                                     <i class="fa-solid fa-city"></i>
@@ -239,9 +238,9 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <div class="category">
-                                        <h3>Modes</h3>
-                                        <ul class="sub-category" role="list">
+                                    <div class="dropdown__group">
+                                        <span class="dropdown__title"> Modes </span>
+                                        <ul class="dropdown__list" role="list">
                                             <li>
                                                 <div class="bullet">
                                                     <i class="fa-solid fa-display"></i>
@@ -301,33 +300,34 @@
                                 </div>
                             </div>
                         </li>
-                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#" class="nav__link">Pricing</a></li>
                     </ul>
-                    <ul
-                        class="header__ul-secondary menu"
-                        aria-label="header-navigation"
-                        role="list"
-                    >
-                        <li>
-                            <button id="language" aria-expanded="false">
-                                <span class="language-text"
-                                    >Choose Language
-                                    <span class="language-dropdown">&#x25BC;</span></span
-                                ><span class="language-flag"
-                                    ><img src="images/us-lang.png" alt="flag"
+                    <ul class="nav__list nav__list-secondary" role="list">
+                        <li class="dropdown__item">
+                            <div class="nav__link dropdown__button">
+                                <span class="language-text">Choose Language</span>
+                                <span class="language-flag"
+                                    ><img src="images/us-lang.png" alt="us-flag" width="30px"
                                 /></span>
-                            </button>
-                            <ul class="sub-menu" role="list" id="language-list">
-                                <li><a href="#">Français</a></li>
-                                <li><a href="#">English</a></li>
-                                <li><a href="#">Español</a></li>
-                                <li><a href="#">Deutsch</a></li>
-                                <li><a href="#">中国人</a></li>
-                            </ul>
+                                <i class="fa-solid fa-chevron-down dropdown__arrow"></i>
+                            </div>
+                            <div class="dropdown__container">
+                                <div class="dropdown__content">
+                                    <div class="dropdown__group">
+                                        <ul class="dropdown__list" role="list">
+                                            <li><a href="#">Français</a></li>
+                                            <li><a href="#">English</a></li>
+                                            <li><a href="#">Español</a></li>
+                                            <li><a href="#">Deutsch</a></li>
+                                            <li><a href="#">中国人</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
-                        <li class="invisible-li"><a href="#">Support</a></li>
-                        <li class="invisible-li"><a href="#">Login</a></li>
-                        <li class="invisible-li"><a href="#">Book a demo</a></li>
+                        <li class="invisible-li"><a href="#" class="nav__link">Support</a></li>
+                        <li class="invisible-li"><a href="#" class="nav__link">Login</a></li>
+                        <li class="invisible-li"><a href="#" class="nav__link">Book a demo</a></li>
                         <li>
                             <button class="btn fw-medium" data-type="black">
                                 Free trial <span>&rarr;</span>

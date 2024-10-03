@@ -1,39 +1,64 @@
-const navToggle = document.querySelector(".mobile-nav-toggle");
-const headerNav = document.querySelector(".header__nav");
+const showMenu = (toggleId, navId) => {
+    const toggle = document.getElementById(toggleId),
+        nav = document.getElementById(navId);
 
-navToggle.addEventListener("click", () => {
-    headerNav.hasAttribute("data-visible")
-        ? navToggle.setAttribute("aria-expanded", false)
-        : navToggle.setAttribute("aria-expanded", true);
-    headerNav.toggleAttribute("data-visible");
+    toggle.addEventListener("click", () => {
+        nav.classList.toggle("show-menu");
+
+        toggle.classList.toggle("show-icon");
+
+        if (nav.classList.contains("show-menu")) {
+            document.body.style.pointerEvents = "none";
+            toggle.style.pointerEvents = "auto";
+        } else {
+            document.body.style.pointerEvents = "auto";
+        }
+    });
+};
+
+showMenu("nav-toggle", "nav-menu");
+
+const dropdownItems = document.querySelectorAll(".dropdown__item");
+
+dropdownItems.forEach((item) => {
+    const dropdownButton = item.querySelector(".dropdown__button");
+
+    dropdownButton.addEventListener("click", () => {
+        const showDropdown = document.querySelector(".show-dropdown");
+
+        toggleItem(item);
+
+        if (showDropdown && showDropdown != item) {
+            toggleItem(showDropdown);
+        }
+    });
 });
 
-const exampleToggle = document.getElementById("examples");
-const exampleList = document.getElementById("examples-list");
-const exampleDropdown = document.querySelector(".example-dropdown");
-const languageDropdown = document.querySelector(".language-dropdown");
+const toggleItem = (item) => {
+    const dropdownContainer = item.querySelector(".dropdown__container");
 
-exampleToggle.addEventListener("click", () => {
-    exampleList.toggleAttribute("data-visible");
-    if (!exampleList.hasAttribute("data-visible")) {
-        exampleToggle.setAttribute("aria-expanded", false);
-        exampleDropdown.innerHTML = "&#x25BC;";
+    if (item.classList.contains("show-dropdown")) {
+        dropdownContainer.removeAttribute("style");
+        item.classList.remove("show-dropdown");
     } else {
-        exampleToggle.setAttribute("aria-expanded", true);
-        exampleDropdown.innerHTML = "&#x25B2;";
+        dropdownContainer.style.height = dropdownContainer.scrollHeight + "px";
+        item.classList.add("show-dropdown");
     }
-});
+};
 
-const languageToggle = document.getElementById("language");
-const languageList = document.getElementById("language-list");
+const mediaQuery = matchMedia("(min-width: 69.875em)"),
+    dropdownContainer = document.querySelectorAll("dropdown__container");
 
-languageToggle.addEventListener("click", () => {
-    languageList.toggleAttribute("data-visible");
-    if (!languageList.hasAttribute("data-visible")) {
-        languageToggle.setAttribute("aria-expanded", false);
-        languageDropdown.innerHTML = "&#x25BC;";
-    } else {
-        languageToggle.setAttribute("aria-expanded", true);
-        languageDropdown.innerHTML = "&#x25B2;";
+const removeStyle = () => {
+    if (mediaQuery.matches) {
+        dropdownContainer.forEach((e) => {
+            e.removeAttribute("style");
+        });
+
+        dropdownItems.forEach((e) => {
+            e.classList.remove("show-dropdown");
+        });
     }
-});
+};
+
+addEventListener("resize", removeStyle);

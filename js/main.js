@@ -8,9 +8,13 @@ const showMenu = (toggleId, navId) => {
         toggle.classList.toggle("show-icon");
 
         if (nav.classList.contains("show-menu")) {
+            toggle.setAttribute("aria-expanded", true);
+
             document.body.style.pointerEvents = "none";
             toggle.style.pointerEvents = "auto";
         } else {
+            toggle.setAttribute("aria-expanded", false);
+
             document.body.style.pointerEvents = "auto";
         }
     });
@@ -35,12 +39,17 @@ dropdownItems.forEach((item) => {
 });
 
 const toggleItem = (item) => {
+    const dropdownButton = item.querySelector(".dropdown__button");
     const dropdownContainer = item.querySelector(".dropdown__container");
 
     if (item.classList.contains("show-dropdown")) {
+        dropdownButton.setAttribute("aria-expanded", false);
+
         dropdownContainer.removeAttribute("style");
         item.classList.remove("show-dropdown");
     } else {
+        dropdownButton.setAttribute("aria-expanded", true);
+
         dropdownContainer.style.height = dropdownContainer.scrollHeight + "px";
         item.classList.add("show-dropdown");
     }
